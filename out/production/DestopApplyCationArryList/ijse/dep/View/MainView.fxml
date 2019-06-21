@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="MainFrame" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ijse.dep.countroller.MainController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fx:id="ManageCustomer" fitHeight="101.0" fitWidth="116.0" layoutX="23.0" layoutY="112.0" onMouseClicked="#GoToCustemerManagement" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Image/CustomerSupport_96px.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="ManageInventry" fitHeight="91.0" fitWidth="101.0" layoutX="177.0" layoutY="112.0" onMouseClicked="#GoToTheInventryManagement" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Image/Coins_96px.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="211.0" layoutY="26.0" prefHeight="44.0" prefWidth="143.0" text="Sale House shop" textAlignment="CENTER" textFill="#250cc9">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="CustermerLable" layoutX="38.0" layoutY="228.0" onMouseClicked="#GoToCustemerManagement" text="Custmer Management" textFill="#1b09dd" />
+        <Label fx:id="InventryLable" layoutX="177.0" layoutY="228.0" onMouseClicked="#GoToTheInventryManagement" text="Inventry Management" textFill="#1308e4" />
+        <ImageView fx:id="OrderImage" fitHeight="107.0" fitWidth="119.0" layoutX="317.0" layoutY="109.0" onMouseClicked="#GotoThePlaseOrder" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Image/Buy_96px.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="342.0" layoutY="228.0" onMouseClicked="#GotoThePlaseOrder" prefHeight="17.0" prefWidth="74.0" text="Plase Order" textFill="#0f0bee" />
+    </children>
+</AnchorPane>

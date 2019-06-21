@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CustomerForm" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ijse.dep.countroller.CustomerController">
+    <children>
+        <Button fx:id="NewCustomer" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#CreatNewCustomer" style="-fx-background-color: #FF0000;" text="New Customer" />
+        <Button fx:id="back" layoutX="499.0" layoutY="26.0" mnemonicParsing="false" onAction="#GoToTheBack" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #40FF00;" text="Back" />
+        <Label layoutX="19.0" layoutY="89.0" text="ID" />
+        <Label layoutX="19.0" layoutY="124.0" text="Name" />
+        <Label layoutX="19.0" layoutY="156.0" text="Address" />
+        <TextField fx:id="CustermerId" layoutX="113.0" layoutY="85.0" prefHeight="25.0" prefWidth="346.0" />
+        <TextField fx:id="CustomerName" layoutX="113.0" layoutY="120.0" prefHeight="25.0" prefWidth="346.0" />
+        <TextField fx:id="CustomerAddress" layoutX="113.0" layoutY="152.0" prefHeight="25.0" prefWidth="346.0" />
+        <Button fx:id="Save" layoutX="499.0" layoutY="85.0" mnemonicParsing="false" onAction="#SaveCustomer" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #00FFFF;" text="Save" />
+        <Button fx:id="Deleted" layoutX="499.0" layoutY="144.0" mnemonicParsing="false" onAction="#DeletedCustomer" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #FF00FF;" text="Deleted" />
+        <Label layoutX="208.0" layoutY="26.0" prefHeight="25.0" prefWidth="206.0" text="Customer Managment" textFill="#0d0de8">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="CustomerTable" layoutX="9.0" layoutY="189.0" prefHeight="206.0" prefWidth="582.0">
+            <columns>
+                <TableColumn prefWidth="118.0" text="ID" />
+                <TableColumn prefWidth="225.0" text="Name" />
+                <TableColumn prefWidth="238.0" text="Address" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="InventryFrom" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sliit.arryList.countroller.ItemController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Button fx:id="NewItem" layoutX="505.0" layoutY="231.0" mnemonicParsing="false" onAction="#CreatNewItem" style="-fx-background-color: #FF0000;" text="New Item" />
+        <Button fx:id="back" layoutX="419.0" layoutY="25.0" mnemonicParsing="false" onAction="#GoToTheBack" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #40FF00;" text="Back" />
+        <Label layoutX="15.0" layoutY="63.0" text="ID" />
+        <Label layoutX="15.0" layoutY="90.0" text="Name" />
+        <Label layoutX="15.0" layoutY="122.0" text="Description" />
+        <TextField fx:id="ItemId" layoutX="109.0" layoutY="59.0" prefHeight="25.0" prefWidth="464.0" />
+        <TextField fx:id="ItemName" layoutX="109.0" layoutY="86.0" prefHeight="25.0" prefWidth="464.0" />
+        <TextField fx:id="ItemDescription" layoutX="109.0" layoutY="118.0" prefHeight="25.0" prefWidth="464.0" />
+        <Button fx:id="Save" layoutX="109.0" layoutY="231.0" mnemonicParsing="false" onAction="#SaveItem" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #00FFFF;" text="Save" />
+        <Button fx:id="Deleted" layoutX="307.0" layoutY="231.0" mnemonicParsing="false" onAction="#DeletedItem" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #FF00FF;" text="Deleted" />
+        <Label layoutX="15.0" layoutY="24.0" prefHeight="25.0" prefWidth="209.0" text=" Item Managment  ....." textFill="#0d0de8">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="ItemTable" layoutX="9.0" layoutY="284.0" prefHeight="245.0" prefWidth="582.0">
+            <columns>
+                <TableColumn prefWidth="83.0" text="ID" />
+                <TableColumn prefWidth="122.0" text="Name" />
+                <TableColumn prefWidth="132.0" text="Description" />
+                <TableColumn prefWidth="124.0" text="QTY" />
+                <TableColumn prefWidth="124.0" text="Unit Price" />
+            </columns>
+        </TableView>
+        <Label layoutX="14.0" layoutY="152.0" text="Amount" />
+        <TextField fx:id="ItemAmount" layoutX="109.0" layoutY="148.0" prefHeight="25.0" prefWidth="464.0" />
+        <Label layoutX="14.0" layoutY="183.0" prefHeight="17.0" prefWidth="61.0" text="Item Price" />
+        <TextField fx:id="ItemPrice" layoutX="109.0" layoutY="179.0" prefHeight="25.0" prefWidth="464.0" />
+    </children>
+</AnchorPane>
